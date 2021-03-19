@@ -41,8 +41,25 @@ left JOIN
  employees as e
  on e.Company = c.Name
  where e.Role like 'Graphic Designer'
- 
-   
+
+ select name FROM students where Points = (SELECT Max(Points) FROM students)
+
+ SELECT avg(Points) FROM students
+
+
+SELECT count(id) FROM students
+where Points = 500
+
+SELECT name FROM students
+where name like '%s%'
+
+SELECT * FROM students
+ORDER by Points desc
+
+
+
+
+
 
 
 
