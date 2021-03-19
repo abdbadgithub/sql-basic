@@ -25,4 +25,25 @@ INSERT INTO graduates VALUES ('1','layal','18','F','350','08/09/2018');
 
 DELETE FROM graduates WHERE name like 'layal';
 
+SELECT e.name,e.Role,c.name,c.date from employees  as e
+left JOIN 
+ companies as c
+ on e.Company = c.Name
+
+ SELECT e.name from employees  as e
+left JOIN 
+ companies as c
+ on e.Company = c.Name
+  where c.date < 2000
+
+SELECT c.name from companies  as c
+left JOIN 
+ employees as e
+ on e.Company = c.Name
+ where e.Role like 'Graphic Designer'
+ 
+   
+
+
+
 
