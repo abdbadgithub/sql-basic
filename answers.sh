@@ -12,3 +12,17 @@ UPDATE  students set Points = 400 where name like "Basma"
 
 UPDATE  students set Points = 150 where name like "Alex"
 
+CREATE TABLE graduates (
+	ID  INTEGER PRIMARY KEY AUTOINCREMENT ,
+	Name TEXT NOT NULL UNIQUE,
+	Age INTEGER ,
+	Gender TEXT ,
+	Points TEXT ,
+	Graduation TEXT
+);
+
+INSERT INTO graduates VALUES ('1','layal','18','F','350','08/09/2018');
+
+DELETE FROM graduates WHERE name like 'layal';
+
+
